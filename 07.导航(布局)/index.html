@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>导航</title>
+    <style>
+      .nav {
+        text-align: center;
+      }
+      .nav a {
+          text-align: center;
+          width: 120px;
+          height: 50px;
+          background-image: url(images/bg.png);
+          /* 因为a标签是行内元素，没有大小，所以转换成inline-block */
+          display: inline-block;
+          color: #ffffff;
+          /* 取消下划线 */
+          text-decoration: none;
+          /* 行高等于盒子的高度，可以让单行文本垂直居中 */
+          line-height: 50px;
+      }
+      .nav a:hover{
+          background-image: url(images/bgc.png);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="#">网站导航</a> <a href="#">网站导航</a>
+      <a href="#">网站导航</a> <a href="#">网站导航</a> <a href="#">网站导航</a>
+    </div>
+  </body>
+</html>
